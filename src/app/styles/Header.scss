@@ -1,17 +1,31 @@
-.header {
+/* Header.scss */
+
+header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.8); // Example background color
+  background-color: #1b1b1b;
   padding: 10px 0;
-  transition: opacity 0.3s;
-  opacity: 1; // Initially visible
-  pointer-events: auto; // Initially clickable
-  z-index: 1000; // Ensure header is above other content
+  z-index: 1000;
+  text-align: left;
+  margin: 0 auto;
 
-  &.hidden {
-    opacity: 0;
-    pointer-events: none;
+  nav {
+    ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    ul li {
+      margin: 0 20px;
+    }
+
+    ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
   }
 }

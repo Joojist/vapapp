@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import "../styles/header.scss";
+import "../styles/Header.scss";
 
 const Header: React.FC = () => {
   const [isAtTop, setIsAtTop] = useState(true);
@@ -18,14 +18,44 @@ const Header: React.FC = () => {
   }, []);
 
   return (
-    <header className={isAtTop ? "" : "hidden"}>
-      <nav>
-        <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Contact</li>
-        </ul>
-      </nav>
+    <header>
+      <div className="content-wrapper">
+        <nav>
+          <ul>
+            <img
+              src="Vapiano/Apollo-Grupi-logo.svg"
+              alt="Apollo Group Logo"
+              width="33.438"
+              height="30.672"
+              className="apollo_logo"
+            />
+            <li>
+              <a href="#">Liitu Apollo klubiga</a>
+            </li>
+            <li>
+              <a href="#">Apollo e-pood</a>
+            </li>
+            <li>
+              <a href="#">Apollo kino</a>
+            </li>
+            <li>
+              <a href="#">Blender</a>
+            </li>
+            <li>
+              <a href="#">O’Learys</a>
+            </li>
+            <li>
+              <a href="#">Apotheka</a>
+            </li>
+            <li>
+              <a href="#">Apotheka beauty</a>
+            </li>
+            <li>
+              <a href="#">Petcity</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
   );
 };

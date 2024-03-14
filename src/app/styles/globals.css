@@ -6,6 +6,11 @@
   padding: 25px 50px 0 75px;
 }
 
+.content-wrapper {
+  max-width: 1800px !important;
+  margin: 0 auto;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
