@@ -1,0 +1,17 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8); // Example background color
+  padding: 10px 0;
+  transition: opacity 0.3s;
+  opacity: 1; // Initially visible
+  pointer-events: auto; // Initially clickable
+  z-index: 1000; // Ensure header is above other content
+
+  &.hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
